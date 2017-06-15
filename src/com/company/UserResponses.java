@@ -21,6 +21,9 @@ public class UserResponses {
         messages = new Messages();
     }
 
+    /**
+     * Allows for user response and behaves accordingly.
+     */
 
     public void gatherUserHomeChoice() {
         while (!isValidHomeResponse) {
@@ -49,6 +52,10 @@ public class UserResponses {
     }
 
 
+    /**
+     * Allows user to continually add concerts.
+     */
+
     public void gatherUserConcertInput() {
         String response = "";
         while (!(response.toLowerCase().equals("done"))) {
@@ -61,6 +68,11 @@ public class UserResponses {
     }
 
 
+    /**
+     * Allows user to rate concert, making sure they add a valid name to check, enter a valid score,
+     * and enter a valid response related to continuing. 3 loops embedded within one-another.
+     */
+
     private void rateConcertInput() {
         String continueResponse = "";
         boolean validResponse = false;
@@ -72,7 +84,7 @@ public class UserResponses {
             appLogic.retrieveConcerts();
             concertChoice = scanner.next().toLowerCase();
             validResponse = appLogic.choiceEntered(concertChoice);
-            if(!validResponse) {
+            if (!validResponse) {
                 messages.invalidResponse();
             } else {
                 while (!validRating) {

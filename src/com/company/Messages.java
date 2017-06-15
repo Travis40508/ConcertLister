@@ -6,6 +6,10 @@ package com.company;
 public class Messages {
 
 
+    /**
+     * Messages are self-explanatory
+     */
+
     public void greetUser() {
         System.out.println("Welcome to your very own Concert Lister! Please enter your favorite \n" +
                 "concerts 1 at a time. When you are finished entering concerts, type 'done' to return to home");

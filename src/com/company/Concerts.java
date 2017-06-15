@@ -7,6 +7,9 @@ public class Concerts {
     private String songTitle;
     private int songRating;
 
+    /**
+     * Concerts object for storing rating and title.
+     */
     public Concerts(String songTitle, int songRating) {
         this.songTitle = songTitle;
         this.songRating = songRating;

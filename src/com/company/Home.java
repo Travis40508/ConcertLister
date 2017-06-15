@@ -8,6 +8,9 @@ public class Home {
     private Messages messages;
     private UserResponses responses;
 
+    /**
+     * Initiates classes in app and starts execution
+     */
     public void init() {
         messages = new Messages();
         responses = new UserResponses();
